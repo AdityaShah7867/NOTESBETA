@@ -1,9 +1,6 @@
 {% load static %}
 <section class="header"  >
 
-
-        
-
     <nav>
 
         <a href="{% static 'index.html' %}"><img src="{% static 'images/logo1.jpg' %}" class="logo"></a>
@@ -14,11 +11,19 @@
            
             
             <ul>
+              
                 <li><a href="">HOME</a></li>
           
                 <li><a href="#">NOTES</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">CONTRIBUTE</a></li>
+
+                
+                {% if user.is_authenticated %}
+
+                <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+
+                {% endif %}
             </ul>
         </div>
         <i class='bx bx-menu' style='color:#e8e0df' onclick="openMenu()" ></i>

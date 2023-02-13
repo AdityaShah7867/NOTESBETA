@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/21.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/21.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -226,7 +226,7 @@ button {
     text-align: center;
     border: red;
     padding: 1rem;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/mathsf.png);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/mathsf.png");
     padding-top: 50px;
     padding-bottom: 150px;
     border: var(--border);
@@ -239,7 +239,7 @@ button {
     text-align: center;
     border: red;
     padding: 1rem;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/cnn.png);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/cnn.png");
     padding-top: 50px;
     padding-bottom: 150px;
     border: var(--border);
@@ -251,7 +251,7 @@ button {
     text-align: center;
     border: red;
     padding: 1rem;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Atm.png);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/Atm.png");
     padding-top: 50px;
     padding-bottom: 150px;
     border: var(--border);
@@ -263,7 +263,7 @@ button {
     text-align: center;
     border: red;
     padding: 1rem;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/plmn.png);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/plmn.png");
     padding-top: 50px;
     padding-bottom: 150px;
     border: var(--border);
@@ -275,7 +275,7 @@ button {
     text-align: center;
     border: red;
     padding: 1rem;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/coa.png');
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/coa.png");
     padding-top: 50px;
     padding-bottom: 150px;
     border: var(--border);
@@ -288,7 +288,7 @@ button {
     text-align: center;
     border: red;
     padding: 1rem;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(static/images/os.png);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/static/images/os.png");
     padding-top: 50px;
     padding-bottom: 150px;
     border: var(--border);

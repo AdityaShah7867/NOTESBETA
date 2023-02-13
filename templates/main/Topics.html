@@ -11,9 +11,42 @@
     
     <!-- Link To CSS -->
     
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
     
     <!-- Box Icons -->
+<section style="border: 2px solid #e8e0df;">
+    <nav>
+
+       
+        
+        <div class="nav-links" id="navLinks">
+
+            <i class='bx bx-shield-x' style='color:#fff8f7' onclick="hideMenu()" ></i>
+           
+            
+            <ul>
+              
+                <li><a href="">HOME</a></li>
+          
+                <li><a href="#">NOTES</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTRIBUTE</a></li>
+
+                
+                {% if user.is_authenticated %}
+
+                <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+
+                {% endif %}
+            </ul>
+        </div>
+        <i class='bx bx-menu' style='color:#e8e0df' onclick="openMenu()" ></i>
+    </nav>
+
+
+</section>
     
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -34,16 +67,12 @@
 
     <section class="header">
 
-    
-    
-    
-  
         
-    <section class="pricing" id="pricing">
+    <section class="pricing" id="pricing" >
 
-        <h1 class="heading"> SELECT SUBJECT </h1>
+        <h1 class="heading" style="background-color: #181434;"> SELECT SUBJECT </h1>
          
-        <div class="box-container">
+        <div class="box-container" style="background-color: #181434 ;">
          
             <div class="box1">
             
@@ -70,8 +99,8 @@
 
             <div class="box3">
                
-                
-                <a href="{% url 'automata' %}" class="h-btn"><img src="{% static 'images/Atm.png' %}" alt=""></a>
+                <h6>AUTOMATA</h6><br>
+                <a href="{% url 'automata' %}" class="h-btn"><h3>GET PYTHON SEM IV NOTES</h3></a>
                
             </div>
 

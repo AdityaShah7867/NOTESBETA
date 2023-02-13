@@ -12,5 +12,6 @@ urlpatterns = [
     path('coa/',views.coa,name='coa'),
     path('cnnd/',views.cnnd,name='cnnd'),
     path('python/',views.pythont,name='python'),
+    path('logout/',views.logoutT,name='logout'),
 
 ]

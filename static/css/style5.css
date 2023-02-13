@@ -136,7 +136,7 @@ center1{
     place-items: center;
     overflow: hidden;
     border-radius: 20px;
-    background-image:url(images/notes.png);
+    background-image:url("/static/images/notes.png");
   }
   
   .card1 h2 {
@@ -212,7 +212,7 @@ center1{
             place-items: center;
             overflow: hidden;
             border-radius: 20px;
-            background-image:url(images/notes.png);
+            background-image:url("/static/images/notes.png");
         }
         .card1 h2 {
             z-index: 1;
