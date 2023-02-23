@@ -1,32 +1,35 @@
-{% load static %}
-<section class="header"  >
-
-    <nav>
-
-        <a href="{% static 'index.html' %}"><img src="{% static 'images/logo1.jpg' %}" class="logo"></a>
-        
-        <div class="nav-links" id="navLinks">
-
-            <i class='bx bx-shield-x' style='color:#fff8f7' onclick="hideMenu()" ></i>
-           
-            
-            <ul>
-              
-                <li><a href="">HOME</a></li>
-          
-                <li><a href="#">NOTES</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTRIBUTE</a></li>
-
-                
-                {% if user.is_authenticated %}
-
-                <li><a href="{% url 'logout' %}">LOGOUT</a></li>
-
-                {% endif %}
+<nav class="navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">NOTES VCET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      {% if user.is_authenticated %}
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'notes' %}">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'about' %}">About us</a>
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Welcome {{user.name}}
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'addNotes' %}">Add Notes</a></li>
+              <li><a class="dropdown-item" href="{% url 'status' %}">Status</a></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
             </ul>
-        </div>
-        <i class='bx bx-menu' style='color:#e8e0df' onclick="openMenu()" ></i>
-    </nav>
-
-</section>
+          </li>
+          
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+ 
+  </nav>
